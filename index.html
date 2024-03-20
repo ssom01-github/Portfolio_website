@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweta Rathor - Web developer and AI enthuthiaste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <nav>
+            
+            <ul id="sidemenu">
+
+                <li><a href="/">Home</a></li>
+                <li><a href="/About.html">About Me</a></li>
+                <li><a href="/Services.html">Services</a></li>
+                <li><a href="/Contact.html">Contact me</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                
+                 
+        </ul>
+        
+     </nav>
+    </div>
+    <div class="main">
+        <div class="symbol">
+            <img class="lines" src="imgs/lines.jpg" alt="" width="23" onclick="openmenu()">
+            <img class="cross" src="imgs/cross.jpg" alt="" width="23" onclick="closemenu()">
+        </div>
+        
+        <div class="infoContainer">
+            <div class="devInfo">
+                <div class="hello">Hello! I am</div>
+                <div class="name">Sweta Rathor</div>
+                <div class="about">Web Developer</div>
+                <div class="moreabout">I am Developer and coffee is the therapy to code the world.
+                    I love to drink coffee as it is the perfect blend of freshness
+                </div>
+                <div class="buttons">
+                    <a href="/cv.txt" target="_blank">
+                    <button class="btn">Download Cv</button></a>
+                    <a href="/contact.html" ><button class="btn">Contact me</button>
+                </div>
+            </div>
+            <div class="devPic"><img src="imgs/dev.png" alt="Sweta"></div>
+            
+            
+        </div>
+    </div>
+    <script>
+          var sidemenu = document.getElementById("sidemenu");
+          function openmenu(){
+            sidemenu.style.right= "0";
+
+          }
+          function closemenu(){
+            sidemeu.style.right="-200px";
+
+          }
+    </script>
+   
+</body>
+</html>

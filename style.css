@@ -1,0 +1,343 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:ital,wght@0,200;0,700;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:ital,wght@0,200;0,700;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Source+Code+Pro:wght@300&display=swap');
+ 
+ /*styling of index.html*/
+ *{
+
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: hsl(270, 1%, 68%);
+    /*width: 300px;*/
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+}
+.symbol{
+   position: absolute;
+   left: 10px;
+   cursor: pointer;
+   top: 10px;
+   display: none;
+
+}
+.lines{
+    display: none;
+}
+.cross{
+    margin-left: 147px;
+}
+.sidebar nav{
+    padding: 40px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 30px 0px;
+    position:relative;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+   /* background-color: rgb(230, 230, 109);*/
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: flex;
+
+}
+.infoContainer{
+   /* background-color: rgb(136, 0, 255);*/
+  height: 56vh;
+    width:150vh ;
+    margin: 250px auto;
+    display: flex;
+   justify-content: space-around;
+   margin-top: 172px;
+
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 84px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.hello{
+  font-size: 65px;
+}
+.name{
+   font-size: 70px;
+   font-weight: bold;
+   font-family: 'Fira Sans', sans-serif;
+}
+.about{
+  font-size: 40px;
+
+}
+.moreabout{
+    font-size: 22px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 23px;
+}
+.buttons{
+    margin-top: 34px;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 25px;
+    color: white;
+    background-color: #ff004f;
+    
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btn-sm {
+    font-size: 13px;
+    padding: 10px 19px;
+    margin: 9px 0;
+}
+.btn:hover{
+   background-color: white;
+   color: rgb(225, 112, 127);
+}
+.devPic img{
+width: 360px;
+ height: 56vh;
+position: relative;
+right: auto;
+
+}
+/*styling of contact form*/
+
+.contact-left{
+    flex-basis: 35%;
+    margin: 10px;
+   
+}
+.contact-right{
+    flex-basis: 30%;
+    margin: 10px;
+}
+.contact-left p{
+    margin-top: 25px;
+}
+.contact-left p i{
+   color: #1a181a;
+   margin-right: 15px;
+   font-size: 20px; 
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #575656;
+    display: inline-block;
+    transition: transform(00.5s);
+}
+.social-icons a:hover{
+    color: #1e1d1d;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #ff004f;
+    margin: 18px;
+    font-size: 13px;
+    text-decoration: none;
+    
+}
+.btn.btn2:hover{
+    background-color: #ebe8e8;
+    color: rgb(202, 88, 88);
+}
+.contact-right form{
+width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 2px solid black;
+    outline: none;
+    background: #efebeb;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(5, 4, 4);
+    font-size: 18px;
+    border-radius: 8px;
+
+}
+
+
+/*styling for blog page*/
+.blogItem{
+margin: 20px;
+font-family: 'Fira Sans', sans-serif;
+}
+
+.blogContainer h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 26px;
+   
+}
+/*styling about me page*/
+h1{
+    font-style: italic;
+    margin: 15px;
+}
+ h2{
+    padding: 10px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+ p{
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+/*.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0 12px;
+    
+}*/
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+}
+.main{
+    padding: 12px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+margin-right: 18px;
+font-size: 30px;
+font-weight:bold;
+cursor: pointer;
+position: relative;
+font-family: 'Source Code Pro', monospace;
+padding: 15px;
+    padding-right: 172px;
+}
+.tab-links::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+   width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+  color: rgb(249, 22, 41);
+  font-size: 25px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*styling of service page*/
+#Services{
+    
+padding: 30px 0;
+}
+.Service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 35px;
+    margin-top: 80px;
+    margin-right: 80px;
+}
+.Service-list div{
+  background-color: #a49d9d;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: backgroud 0.5s, transform 0.5s;
+}
+.Service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.Service-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.Service-list div a{
+    text-decoration: none;
+    color: rgb(10, 9, 9);
+    font-size: 17px;
+    margin-top: 5px;
+    display: inline-block;
+}
+.Service-list div:hover{
+    background: #f98caf;
+    transform: translateY(-10px);
+}
+
+
+@media only screen and (max-width: 600px){
+    
+    nav ul{
+        height: 500vh;
+        top: 0;
+        padding-top: 30px;
+        right: -200px;
+        width: 200px;
+        
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    .cross{
+        margin-left: 218px;
+        padding-top: 10px;
+       
+    }
+    .symbol{
+        position: absolute;
+        left: 10px;
+        cursor: pointer;
+        top: 10px;
+        display: block;
+        cursor: pointer;
+     
+     }
+     .lines{
+        display: block;
+        padding-top: 8px;
+        position: absolute;
+     }
+     
+    
+   
+   
+}

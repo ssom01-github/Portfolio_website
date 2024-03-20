@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweta Rathor - Web developer and AI enthuthiaste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/About.html">About Me</a></li>
+                <li><a href="/Services.html">Services</a></li>
+                <li><a href="/Contact.html">Contact me</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+       <div class="intro"></div>
+               <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, et. Nemo reiciendis maiores
+                     doloremque, officia natus accusamus. Animi, laborum. Mollitia nisi quos non dolor distinctio
+                      commodi deserunt voluptates voluptas. Blanditiis!</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('work')">Work</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skilss">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interface</li>
+                            <li><span>Web development</span><br>Website designing and development</li>
+                            <li><span>Mobile apps development</span><br>Developing andriod/ios apps</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="work">
+                        <ul>
+                            <li><span>App development</span><br>Mobile location based advertisement system</li>
+                            <li><span>E-commerece application</span><br>Online book store</li>
+                            <li><span>Website development</span><br>ERP system</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Software developer at amazon</li>
+                            <li><span>2021</span><br>MCA from NIT Trichy</li>
+                            <li><span>2018</span><br>BCA from VIT vellore</li>
+                        </ul>
+                     </div>
+            </div>
+           
+            
+            
+        </div>
+    </div>
+    <script >
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname){
+            for(tablink of tablinks){
+                  tablink.classList.remove("active-link");
+          }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+</body>
+</html>
